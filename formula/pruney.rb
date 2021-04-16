@@ -15,6 +15,14 @@ class Pruney < Formula
     # bin.install "pruney"
   end
 
+  def caveats
+    <<~EOS
+      To allow pruney to capture command history for the bash shell.
+      Add the following to the last line of your bash_profile or bashrc --:
+        source #{opt_libexec}/bash-init.sh"
+    EOS
+  end
+
   # Homebrew requires tests.
   test do
     assert_match "0.7", shell_output("#{bin}/pruney --version", 2)
