@@ -7,19 +7,18 @@ class Pruney < Formula
   url "https://github.com/aardlabs/terminal-poc/releases/download/v0.7/pruney-darwin-amd64-v0.7.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
   sha256 "f275f5f910ec11d9d169239cc25a0a214b057553bf1d3c13674f1cc674779497"
   head "https://github.com/aardlabs/terminal-poc.git"
+  depends_on "coreutils"
 
   def install
     libexec.install Dir["*"]
     bin.install_symlink libexec/"pruney"
-    # libexec.install "foo.jar"
-    # bin.install "pruney"
   end
 
   def caveats
     <<~EOS
       To allow pruney to capture command history for the bash shell.
       Add the following to the last line of your bash_profile or bashrc --:
-        source #{opt_libexec}/bash-init.sh"
+        source #{opt_libexec}/bash-init.sh
     EOS
   end
 
