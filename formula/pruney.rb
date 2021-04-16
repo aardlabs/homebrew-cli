@@ -9,7 +9,10 @@ class Pruney < Formula
   head "https://github.com/aardlabs/terminal-poc.git"
 
   def install
-    bin.install "pruney"
+    libexec.install Dir["*"]
+    bin.install_symlink libexec/"pruney"
+    # libexec.install "foo.jar"
+    # bin.install "pruney"
   end
 
   # Homebrew requires tests.
