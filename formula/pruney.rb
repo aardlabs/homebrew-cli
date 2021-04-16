@@ -1,9 +1,10 @@
 require "formula"
+require_relative "lib/private_strategy"
 
 class Pruney < Formula
   desc "pruney is Aardvark's CLI"
   homepage "https://github.com/aardlabs/terminal-poc"
-  url "https://github.com/aardlabs/terminal-poc/releases/download/v0.7/pruney-darwin-amd64-v0.7.zip"
+  url "https://github.com/aardlabs/terminal-poc/releases/download/v0.7/pruney-darwin-amd64-v0.7.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
   sha256 "f275f5f910ec11d9d169239cc25a0a214b057553bf1d3c13674f1cc674779497"
   head "https://github.com/aardlabs/terminal-poc.git"
 
