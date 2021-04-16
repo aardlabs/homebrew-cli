@@ -4,8 +4,8 @@ require_relative "lib/private_strategy"
 class Pruney < Formula
   desc "pruney is Aardvark's CLI"
   homepage "https://github.com/aardlabs/terminal-poc"
-  url "https://github.com/aardlabs/terminal-poc/releases/download/v0.7/pruney-darwin-amd64-v0.7.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-  sha256 "f275f5f910ec11d9d169239cc25a0a214b057553bf1d3c13674f1cc674779497"
+  url "https://github.com/aardlabs/terminal-poc/releases/download/v0.8/pruney-darwin-amd64-v0.8.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+  sha256 "d15f7e3a6732247959ef0f2ba7a34657b7a9b309ddc54ebc8e78f170230dca36"
   head "https://github.com/aardlabs/terminal-poc.git"
   depends_on "coreutils"
 
@@ -24,6 +24,6 @@ class Pruney < Formula
 
   # Homebrew requires tests.
   test do
-    assert_match "0.7", shell_output("#{bin}/pruney --version", 2)
+    assert_match "0.8", shell_output("#{bin}/pruney --version", 2)
   end
 end
