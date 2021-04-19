@@ -17,6 +17,8 @@ $ brew tap aardlabs/cli
 
 # Install pruney
 $ brew install pruney
+
+# pruney should be ready to use.
 ```
 
 ## Notes
