@@ -19,6 +19,14 @@ $ brew tap aardlabs/cli
 $ brew install pruney
 
 # pruney should be ready to use.
+
+Configure and get started:
+   # Setup up pruney to talk to service
+   $ pruney config add remote --service-url https://flaming-fishtoot.herokuapp.com/
+
+   # Login into the user via the specified e-mail
+   # Example: pruney auth login alan@turing.me
+   $ pruney auth login email-address
 ```
 
 ## Notes
