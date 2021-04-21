@@ -5,6 +5,7 @@ class Aard < Formula
   desc "aard is Aardvark's CLI"
   homepage "https://aardvarklabs.com/"
   url "https://github.com/aardlabs/homebrew-cli/releases/download/v0.9.1/pruney-darwin-amd64-v0.9.1.zip"
+  sha256 "651cb48b8d611969dc49fc25d497eba144c621bf121d53544d5f2239b393072a"
   head "https://github.com/aardlabs/homebrew-cli.git"
   depends_on "coreutils"
 
