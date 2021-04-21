@@ -16,9 +16,11 @@ class Aard < Formula
 
   def caveats
     <<~EOS
-      To allow aard to capture command history for the bash shell.
-      Add the following to the last line of your bash_profile or bashrc --:
-        source #{opt_libexec}/bash-init.sh
+      aard (the aardvark CLI) can track your command history locally.
+      To enable this for the bash shell, either run the following command or
+      add it your last line of your bash_profile or bashrc --:
+
+      source #{opt_libexec}/bash-init.sh
     EOS
   end
 
