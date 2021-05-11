@@ -27,17 +27,6 @@ class Aard < Formula
 
         $ aard --help
 
-      * Command history: aard can track your command history locally.
-
-      To enable this for the bash shell, please add this to your last
-      line of your .bash_profile or .bashrc.
-
-        source #{opt_libexec}/bash-init.sh
-
-      To enable this for the zsh shell, please add this to .zshrc.
-
-        source #{opt_libexec}/zsh-init.sh
-
     EOS
   end
 
