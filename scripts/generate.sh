@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export RELEASE_VERSION=0.9.3
+export RELEASE_VERSION=0.9.5
 
 echo "Download https://github.com/aardlabs/homebrew-cli/releases/download/v$RELEASE_VERSION/aard-darwin-amd64-v$RELEASE_VERSION.zip"
 wget https://github.com/aardlabs/homebrew-cli/releases/download/v$RELEASE_VERSION/aard-darwin-amd64-v$RELEASE_VERSION.zip -P /tmp/
