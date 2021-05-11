@@ -9,7 +9,7 @@ class Aard < Formula
   url "https://github.com/aardlabs/homebrew-cli/releases/download/v0.9.5/aard-darwin-amd64-v0.9.5.zip"
   sha256 "ec2c215c34589aac63ab7fd6d0a5131c68562e1653165865b6b0e5d4cd7cc9bf"
   head "https://github.com/aardlabs/homebrew-cli.git"
-  depends_on "coreutils"
+  # depends_on "coreutils"
 
   def install
     libexec.install Dir["*"]
