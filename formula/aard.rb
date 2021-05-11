@@ -15,7 +15,7 @@ class Aard < Formula
     libexec.install Dir["*"]
     bin.install_symlink libexec/"aard"
     (bash_completion/"aard").write `#{bin}/aard completion -s bash`
-    (fish_completion/"aard.fish").write `#{bin}/gh completion -s fish`
+    (fish_completion/"aard.fish").write `#{bin}/aard completion -s fish`
     (zsh_completion/"_aard").write `#{bin}/aard completion -s zsh`
   end
 
