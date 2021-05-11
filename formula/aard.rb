@@ -6,8 +6,8 @@ require_relative "lib/private_strategy"
 class Aard < Formula
   desc "aard is Aardvark's CLI"
   homepage "https://aardvarklabs.com/"
-  url "https://github.com/aardlabs/homebrew-cli/releases/download/v0.9.5/aard-darwin-amd64-v0.9.5.zip"
-  sha256 "ec2c215c34589aac63ab7fd6d0a5131c68562e1653165865b6b0e5d4cd7cc9bf"
+  url "https://github.com/aardlabs/homebrew-cli/releases/download/v0.9.7/aard-darwin-amd64-v0.9.7.zip"
+  sha256 "8e5df41454c3ec0eae2e71c1acf662f9aa9a019b5f47a08ae54803c71af658ba"
   head "https://github.com/aardlabs/homebrew-cli.git"
   # depends_on "coreutils"
 
@@ -32,6 +32,6 @@ class Aard < Formula
 
   # Homebrew requires tests.
   test do
-    assert_match "0.9.5", shell_output("#{bin}/aard --version", 2)
+    assert_match "0.9.7", shell_output("#{bin}/aard --version", 2)
   end
 end
