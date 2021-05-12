@@ -12,7 +12,5 @@ More information can be found [here](https://github.com/aardlabs/cli-release).
 
 
 ### To update the brew tap for a new release
-```
-* Update the version scripts/aard_version.txt and push the change to the main branch
+* Update the version number in scripts/aard_version.txt and push the change to the main branch
 * Note: this specified version should be available [here](https://github.com/aardlabs/cli-release/releases)
-```
