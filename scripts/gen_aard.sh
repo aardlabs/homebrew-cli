@@ -12,6 +12,7 @@ wget https://github.com/aardlabs/cli-release/releases/download/$RELEASE_VERSION/
 stat /tmp/aard-darwin-amd64-$RELEASE_VERSION.zip
 
 export SHA256_CHECKSUM=$(sha256sum /tmp/aard-darwin-amd64-$RELEASE_VERSION.zip | cut -d ' ' -f 1)
+echo "sha256sum $SHA256_CHECKSUM"
 
 envsubst < tmpl/aard_rb.tmpl > formula/aard.rb
 
