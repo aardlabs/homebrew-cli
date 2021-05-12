@@ -6,7 +6,7 @@ require_relative "lib/private_strategy"
 class Aard < Formula
   desc "aard is Aardvark's CLI"
   homepage "https://aardvarklabs.com/"
-  url "https://github.com/aardlabs/homebrew-cli/releases/download/0.9.12/aard-darwin-amd64-0.9.12.zip"
+  url "https://github.com/aardlabs/cli-release/releases/download/0.9.12/aard-darwin-amd64-0.9.12.zip"
   sha256 "5a9a99a29fd15381fe47e76e0b4de98073c5470039a411debef4c78c5fbd5aba"
   head "https://github.com/aardlabs/homebrew-cli.git"
   # depends_on "coreutils"
