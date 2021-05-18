@@ -14,9 +14,9 @@ class Aardy < Formula
   def install
     libexec.install Dir["*"]
     bin.install_symlink libexec/"aardy"
-    (bash_completion/"aard").write `#{bin}/aardy completion -s bash`
-    (fish_completion/"aard.fish").write `#{bin}/aardy completion -s fish`
-    (zsh_completion/"_aard").write `#{bin}/aardy completion -s zsh`
+    (bash_completion/"aardy").write `#{bin}/aardy completion -s bash`
+    (fish_completion/"aardy.fish").write `#{bin}/aardy completion -s fish`
+    (zsh_completion/"_aardy").write `#{bin}/aardy completion -s zsh`
   end
 
   def caveats

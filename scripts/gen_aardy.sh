@@ -14,7 +14,7 @@ stat /tmp/aardy-darwin-amd64-$RELEASE_VERSION.zip
 export SHA256_CHECKSUM=$(sha256sum /tmp/aardy-darwin-amd64-$RELEASE_VERSION.zip | cut -d ' ' -f 1)
 echo "sha256sum $SHA256_CHECKSUM"
 
-envsubst < tmpl/aardy_rb.tmpl > formula/aard.rb
+envsubst < tmpl/aardy_rb.tmpl > formula/aardy.rb
 
 unset RELEASE_VERSION
 unset SHA256_CHECKSUM
