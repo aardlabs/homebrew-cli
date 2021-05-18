@@ -3,7 +3,7 @@ on:
     branches:
     - main
     paths:
-    - 'scripts/aard_version.txt'
+    - 'scripts/aardy_version.txt'
 
 name: Release
 
@@ -20,10 +20,10 @@ jobs:
 
         - name: Get tag name
           id: get_tag_name
-          run: echo ::set-output name=VERSION::$(cat scripts/aard_version.txt)
+          run: echo ::set-output name=VERSION::$(cat scripts/aardy_version.txt)
 
         - name: Create local changes
-          run: RELEASE_VERSION=$(cat ./scripts/aard_version.txt) ./scripts/gen_aard.sh
+          run: RELEASE_VERSION=$(cat ./scripts/aardy_version.txt) ./scripts/gen_aardy.sh
 
         - name: Commit files
           run: |
