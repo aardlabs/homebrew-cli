@@ -6,8 +6,8 @@ require_relative "lib/private_strategy"
 class Aardy < Formula
   desc "aardy is Aardvark's CLI"
   homepage "https://aardvarklabs.com/"
-  url "https://github.com/aardlabs/cli-release/releases/download/0.10.5/aardy-darwin-amd64-0.10.5.zip"
-  sha256 ""
+  url "https://github.com/aardlabs/cli-release/releases/download/0.10.6/aardy-darwin-amd64-0.10.6.zip"
+  sha256 "c6997c29667c4516d7739596fe30e5b6d722d4820ca3b75ea06a20394046f5e6"
   head "https://github.com/aardlabs/homebrew-cli.git"
   # depends_on "coreutils"
 
@@ -32,6 +32,6 @@ class Aardy < Formula
 
   # Homebrew requires tests.
   test do
-    assert_match "0.10.5", shell_output("#{bin}/aardy --version", 2)
+    assert_match "0.10.6", shell_output("#{bin}/aardy --version", 2)
   end
 end
